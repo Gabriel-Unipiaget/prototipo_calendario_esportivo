@@ -3,6 +3,10 @@
 ## 1. Configuração do banco de dados
 
 Primeiro, configure o banco de dados no arquivo `.env`:
+se não tiver rode esse comando para criar
+```bash
+copy .env.example .env
+```
 
 ```env
 DB_CONNECTION=mysql
@@ -16,6 +20,16 @@ DB_PASSWORD=
 Certifique-se de que o MySQL esteja rodando e que o banco de dados esteja configurado corretamente.
 
 ## 2. Rodar as migrations
+
+Mas antes rode
+```bash
+composer install
+```
+
+E depois
+```bash
+php artisan key:generate
+```
 
 Depois de configurar o banco de dados, execute:
 
